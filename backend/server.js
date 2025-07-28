@@ -20,9 +20,9 @@ const __dirname = path.resolve()
 
 
 
-app.get("/",(_,res)=>{
-    return res.status(200).json({message:"I am coming from backend",success:true})
-})
+// app.get("/",(_,res)=>{
+//     return res.status(200).json({message:"I am coming from backend",success:true})
+// })
 
 app.use(express.json())
 app.use(cookieParser())
