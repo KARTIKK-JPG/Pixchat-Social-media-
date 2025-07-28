@@ -27,7 +27,7 @@ const Signup = () => {
     e.preventDefault();
     try {
       setLoading(true);
-      const res = await axios.post('http://localhost:8000/api/v1/user/registor', input, {
+      const res = await axios.post('https://pixchat-social-media.onrender.com/api/v1/user/registor', input, {
         headers: {
           'Content-Type': 'application/json'
         },

@@ -11,7 +11,7 @@ const useGetUserProfile = (userId) => {
     useEffect(() => {
         const fetchUserProfile = async () => {
             try {
-                const res = await axios.get(`http://localhost:8000/api/v1/user/${userId}/profile`, { withCredentials: true })
+                const res = await axios.get(`https://pixchat-social-media.onrender.com/api/v1/user/${userId}/profile`, { withCredentials: true })
                 if (res.data.success) {
                     // console.log(res.data)
                     // console.log("Fetched suggested users:", res.data.user)

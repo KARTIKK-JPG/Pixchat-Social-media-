@@ -29,7 +29,7 @@ app.use(cookieParser())
 app.use(urlencoded({extended:true}))
 
 const corsOptions = {
-    origin: ['http://localhost:5173', 'http://localhost:5174'],
+    origin: process.env.URL,
     credentials: true
 };
 
